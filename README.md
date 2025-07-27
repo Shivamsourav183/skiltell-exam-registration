@@ -1,7 +1,3 @@
-# skiltell-exam-registration
-A PHP-MySQL-based Exam Registration Web Application for managing student exam entries, built under the SKILTELL project. Secure, responsive, and easy-to-use portal for educational institutions.
-
-
 # SKILTELL – Exam Registration System 🎓
 
 A robust and user-friendly web application to manage student exam registrations efficiently. Built with PHP and MySQL, SKILTELL aims to digitize and streamline the exam enrollment process for educational institutions.
@@ -54,8 +50,7 @@ skiltell/
 ├── dashboard.php  
 ├── style.css  
 ├── index.php  
-├── README.md  
-└── screenshots/
+└── README.md  
 
 
 ## 🔖 Tags
