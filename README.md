@@ -45,26 +45,10 @@ A robust and user-friendly web application to manage student exam registrations 
 
 ---
 
-## 📸 Screenshots
-
-
-| Login Page | Dashboard | Registration |
-|------------|-----------|--------------|
-| ![Login](screenshots/login.png) | ![Dashboard](screenshots/dashboard.png) | ![Register](screenshots/register.png) |
-
----
 
 ## 🧩 Folder Structure
 
-skiltell/
-├── db.php
-├── register.php
-├── login.php
-├── dashboard.php
-├── style.css
-├── index.php
-├── README.md
-└── screenshots/
+<pre><code> ## 🧩 Folder Structure skiltell/ ├── db.php ├── register.php ├── login.php ├── dashboard.php ├── style.css ├── index.php ├── README.md └── screenshots/ </code></pre>
 
 
 ## 🔖 Tags
