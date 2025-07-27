@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff; /* White background */
+      margin: 0;
+      padding: 20px;
+    }
+    .support-container {
+      text-align: center;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    h2 {
+      color: #000000;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    .faq-section {
+      margin-top: 30px;
+      text-align: left;
+    }
+    .faq-section h3 {
+      font-size: 20px;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+    .faq-section .faq-item {
+      margin-bottom: 15px;
+    }
+    .faq-section .faq-item p {
+      margin: 5px 0;
+      color: #000000;
+    }
+    .support-form {
+      margin-top: 30px;
+      text-align: left;
+    }
+    .support-form h3 {
+      font-size: 20px;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+    .support-form .form-group {
+      margin-bottom: 15px;
+    }
+    .support-form label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #000000;
+    }
+    .support-form input,
+    .support-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #000000;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #000000;
+      background-color: #ffffff;
+    }
+    .support-form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    .support-form button {
+      background-color: #000000;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    .support-form button:hover {
+      background-color: #333333;
+    }
+    .support-email {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #000000;
+    }
+    .home-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #000000;
+      color: #ffffff;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      margin-top: 20px;
+    }
+    .home-button:hover {
+      background-color: #333333;
+      transform: scale(1.05);
+    }
+    .home-icon {
+      width: 24px;
+      height: 24px;
+      filter: invert(1);
+    }
+  </style>
+</head>
+<body>
+  <div class="support-container">
+    <h2>Support</h2>
+    <!-- FAQ Section -->
+    <div class="faq-section">
+      <h3>Frequently Asked Questions</h3>
+      <div class="faq-item">
+        <p><strong>Q:</strong> How do I register for an online course?</p>
+        <p><strong>A:</strong> Visit the registration page, fill out the required fields, and click the "Register" button.</p>
+      </div>
+      <div class="faq-item">
+        <p><strong>Q:</strong> What information is required during registration?</p>
+        <p><strong>A:</strong> You need to provide your full name, registration number, email address, and any additional details required by the course.</p>
+      </div>
+      <div class="faq-item">
+        <p><strong>Q:</strong> How will I know if my registration was successful?</p>
+        <p><strong>A:</strong> A confirmation message will be displayed on the screen and you will receive an email confirmation.</p>
+      </div>
+      <div class="faq-item">
+        <p><strong>Q:</strong> Can I update my registration details later?</p>
+        <p><strong>A:</strong> Yes, once registered, you can update your details through your dashboard.</p>
+      </div>
+    </div>
+    <!-- Support Form -->
+    <div class="support-form">
+      <h3>Submit Your Issue</h3>
+      <!-- The form's action is set to submit_issue.php -->
+      <form>
+        <div class="form-group">
+          <label for="user-email">Email</label>
+          <input type="email" id="user-email" name="user_email" required>
+        </div>
+        <div class="form-group">
+          <label for="user-message">Message</label>
+          <textarea id="user-message" name="user_message" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <p class="support-email">
+      For further queries, contact us at: <a href="mailto:skilltel@sead.edu.in">skilltel@sead.edu.in</a>
+    </p>
+    <a href="dashboard.php" class="home-button">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Home" class="home-icon"> Home
+    </a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Exam Registration - Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff; /* White background */
+      color: #000000; /* Black text */
+      margin: 0;
+      padding: 20px;
+    }
+    .container, .register-box {
+      background-color: #ffffff;
+      color: #000000;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      text-align: center;
+    }
+    .input-group {
+      background-color: #f5f5f5; /* Light grey background for inputs */
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+      color: #000000;
+    }
+    .input-group label {
+      color: #000000;
+    }
+    .gender-group label {
+      color: #000000;
+      margin-right: 10px;
+    }
+    button {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #333333;
+    }
+    #response {
+      color: #000000;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="register-box">
+      <img src="Download_white.png" alt="SkillTEL Logo">
+      <h2>SkillTEL Sign Up</h2>
+      <p>Register for Online Exam</p>
+      <form id="registerForm" action="register.php" method="POST">
+        <div class="input-group">
+          <input type="text" name="full_name" required>
+          <label for="full_name">Full Name</label>
+        </div>
+        <div class="input-group">
+          <input type="text" name="reg_no" required>
+          <label for="reg_no">Registration No</label>
+        </div>
+        <div class="gender-group">
+          <label>Gender:</label>
+          <input type="radio" name="gender" value="Male" id="gender_male" required>
+          <label for="gender_male">Male</label>
+          <input type="radio" name="gender" value="Female" id="gender_female" required>
+          <label for="gender_female">Female</label>
+        </div>
+        <div class="input-group">
+          <input type="email" name="email" required>
+          <label for="email">Email</label>
+        </div>
+        <div class="input-group">
+          <input type="password" name="password" required>
+          <label for="password">Password</label>
+        </div>
+        <div class="input-group">
+          <input type="text" name="abc_id" placeholder="ABC ID (Optional)">
+          <label for="abc_id">ABC ID</label>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+      <p id="response"></p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("registerForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      let formData = new FormData(this);
+
+      fetch("database.php", {
+        method: "POST",
+        body: formData
+      })
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("response").innerText = data;
+        if (data.includes("successful")) {
+          window.location.href = "success.html"; // Redirect if registration succeeds
+        }
+      })
+      .catch(error => console.error("Error:", error));
+    });
+  </script>
+</body>
+</html>

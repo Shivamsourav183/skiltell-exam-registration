@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Results</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #ffffff; /* White background */
+      margin: 0;
+      color: #000000; /* Black text */
+    }
+    .results-container {
+      text-align: center;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    h2, p {
+      color: #000000;
+    }
+    .home-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #000000; /* Black background for button */
+      color: #ffffff; /* White text for button */
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .home-button:hover {
+      background-color: #333333;
+      transform: scale(1.05);
+    }
+    .home-icon {
+      width: 20px;
+      height: 20px;
+      filter: invert(1);
+    }
+  </style>
+</head>
+<body>
+  <div class="results-container">
+    <h2>Your Results</h2>
+    <p>No results available yet. Please check after the exam.</p>
+    <a href="dashboard.php" class="home-button">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Home" class="home-icon"> Home
+    </a>
+  </div>
+</body>
+</html>

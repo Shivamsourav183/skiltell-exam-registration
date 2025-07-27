@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Exam Registration Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <div class="skilltel-logo">
+        <img src="Download_white.png" alt="SkillTEL Logo">
+      </div>
+      <h1>SkillTEL</h1>
+    </div>
+    <div class="profile-icon">
+      <!-- Display the user's profile photo fetched from the database -->
+      <img src="<?php echo $profile_photo; ?>" alt="Profile Photo" style="width:50px; height:50px; border-radius:50%; object-fit:cover;">
+      <div class="dropdown-menu">
+        <a href="fetchprofile.php">My Profile</a>
+        <a href="logout.php">Logout</a>
+      </div>
+    </div>
+  </header>
+  
+  <div class="dashboard">
+    <div class="section course-registration">
+      <div class="overlay"></div>
+      <i class="fa-solid fa-pen"></i>
+      <h2><a href="Course_reg.html">Course Registration</a></h2>
+      <p>Register for desired courses!</p>
+    </div>
+    <div class="section testimonials">
+      <div class="overlay"></div>
+      <i class="fa-solid fa-comments"></i>
+      <h2><a href="Testimonial.html">Testimonials</a></h2>
+      <p>See what our students say about us!</p>
+    </div>
+    <div class="section support">
+      <div class="overlay"></div>
+      <i class="fa-solid fa-headset"></i>
+      <h2><a href="support.html">Support</a></h2>
+      <p>Need help? Contact our support team.</p>
+    </div>
+    <div class="section user-profile">
+      <div class="overlay"></div>
+      <i class="fa-solid fa-user"></i>
+      <h2><a href="result.html">Results</a></h2>
+      <p>See all your Exam Results here</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 SkillTEL. All rights reserved. <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <!-- Dropdown Toggle Script -->
+  <script>
+    document.querySelector('.profile-icon').addEventListener('click', function(e) {
+      const dropdown = this.querySelector('.dropdown-menu');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+      e.stopPropagation();
+    });
+    
+    document.addEventListener('click', function() {
+      const dropdown = document.querySelector('.dropdown-menu');
+      dropdown.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

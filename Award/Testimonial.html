@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff; /* White background */
+      margin: 0;
+      padding: 20px;
+      color: #000000; /* Black text */
+      position: relative;
+    }
+    /* Back icon styling */
+    .back-icon {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      color: #000000;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.3s ease, transform 0.2s ease;
+    }
+    .back-icon:hover {
+      color: #333333;
+      transform: scale(1.05);
+    }
+    .testimonial-section {
+      max-width: 800px;
+      margin: 60px auto 20px; /* Leave space at top for back icon */
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .testimonial-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #000000;
+    }
+    .testimonial-card {
+      background-color: #f5f5f5; /* Light grey background */
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+    .student-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .student-info h3 {
+      margin: 0;
+      color: #000000;
+    }
+    .rating {
+      color: #FFD700; /* Gold color for stars */
+    }
+    .testimonial-card p {
+      color: #000000;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Back icon at top left -->
+  <a href="dashboard.php" class="back-icon">
+    <i class="fas fa-arrow-left"></i> Back
+  </a>
+  <div class="testimonial-section">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial-card">
+      <div class="student-info">
+        <h3>Rahul Sharma</h3>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <p>"The course was extremely informative and helped me improve my skills. The practical approach and clear explanations really made a difference."</p>
+    </div>
+    <div class="testimonial-card">
+      <div class="student-info">
+        <h3>Priya Singh</h3>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <p>"I found the interactive sessions very engaging and the course content was laid out in a very clear manner. It was a very good learning experience."</p>
+    </div>
+    <div class="testimonial-card">
+      <div class="student-info">
+        <h3>Amit Kumar</h3>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <p>"The online course provided me with valuable insights and practical knowledge. The instructors were supportive, and I feel more confident now."</p>
+    </div>
+    <div class="testimonial-card">
+      <div class="student-info">
+        <h3>Neha Verma</h3>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <p>"I found the online course very beneficial. The curriculum was well-structured, and the faculty explained everything in simple language."</p>
+    </div>
+  </div>
+</body>
+</html>
