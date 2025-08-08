@@ -58,7 +58,9 @@ skiltell/
 
 Visit the live version of SKILTELL here:  
 **🔗 [https://skiltell.vercel.app](https://skilltel.atwebpages.com/login.html)**  
-
+> ⚠️ **Security Note:**  
+> Since this site uses the `http://` protocol (not secure), modern browsers may show a warning or block some features.  
+> 👉 To ensure smooth access, please open the link in **Incognito/Private Mode**.
 ---
 
 
